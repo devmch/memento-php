@@ -6,7 +6,7 @@
  -->
 <html lang="en">
 <head>
-    <title>memento - todo list</title>
+    <title>memento - todo list1</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pageload.css">
     <link rel="stylesheet" href="css/media.css">
@@ -76,9 +76,10 @@
         </div>
     </div>
 
-    <form id="form" class="form" style="margin-bottom: 3rem;">
+    <form id="form" method="POST" class="form" style="margin-bottom: 3rem;">
         <input 
             type="text" 
+            name="todo"
             id="input" 
             class="input" 
             placeholder="add a task..." 
@@ -112,9 +113,10 @@
         </div>
     </div>
 
-    <form id="form1" class="form form1" style="margin-bottom: 3rem;">
+    <form id="form1" method="POST" class="form form1" style="margin-bottom: 3rem;">
         <input 
             type="text" 
+            name="todo"
             id="input1" 
             class="input" 
             placeholder="add a task..." 
@@ -145,9 +147,10 @@
         </div>
     </div>
     
-    <form id="form2" class="form form2" style="margin-bottom: 3rem;">
+    <form id="form2" method="POST" class="form form2" style="margin-bottom: 3rem;">
         <input 
             type="text" 
+            name="todo"
             id="input2" 
             class="input" 
             placeholder="add a task..." 
