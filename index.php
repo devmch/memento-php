@@ -21,16 +21,26 @@
             </li>
             <li><a class="pro" href="/?about">Go Pro</a></li>
             <!-- <li><i class="bi bi-gear-fill bri popup"></i></li> -->
+
+            <?php
+                if(isset($_SESSION["useruid"])){
+                    echo "<li><a href='profile.php'>Profile</a></li>";
+                    echo "<li><a href='db/includes/logout.inc.php'>Logout</a></li>";
+                }
+                else{
+                    echo "<li><a href='db/attributes/signup.php'>Sign Up</a></li>";
+                    echo "<li><a href='db/attributes/login.php'>Login</a></li>";
+                }
+            ?>
         </ul>
     </nav>
 
 
-
-    <a href="#" class="cta">
+    <!-- <a href="#" class="cta">
         <div class="profilepicture">
             <img src="https://res.cloudinary.com/coolors/image/upload/t_60x60/v1636729140/live/custom-avatars/fzhn1oqool8tpb2am7hx.jpg"></img>
         </div>
-    </a>
+    </a> -->
 
 </header>
 
