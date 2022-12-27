@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+$msg = "";
+
+if(isset($_POST["addtodo"])) {
+    $text = mysqli_real_escape_string($conn, $_POST["todo"]);
+    $user_id = $_SESSION["userid"];
+
+    // insert
+    $sql = "INSERT INTO todos (todo, user_id) VALUES ('$text', '$user_id')";
+    $res = mysqli_query($conn, $sql);
+    if ($res) {
+        $msg = "Todo added";
+    } else {
+        $msg = "Failed to add todo";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <!-- 
     @author: Magnus Hvidtfeldt
@@ -87,11 +108,14 @@
             spellcheck="false"
         />
 
+        <button class="btn" id="btn" type="submit" name="addtodo">add</button>
+
         <ul class="todos" id="todos">
             
         </ul>
 
         <!-- <a>tjek</a> -->
+        <?php echo $msg; ?>
     </form>
 
     <!-- NEW LIST 1 -->

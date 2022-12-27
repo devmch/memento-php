@@ -18,7 +18,7 @@
         <form class="form" action="db/includes/signup.inc.php" method="post" style="background-color: var(--b);border: none;">
             <input class="input3" type="text" name="name" placeholder="Full name..." style="margin-bottom:15px;">
             <input class="input3"  type="text" name="email" placeholder="Email..." style="margin-bottom:15px;">
-            <input class="input3"  type="text" name="uid" placeholder="Username" style="margin-bottom:15px;">
+            <input class="input3"  type="text" name="uid" placeholder="Username..." style="margin-bottom:15px;">
             <input class="input3"  type="password" name="pwd" placeholder="Password..." style="margin-bottom:15px;">
             <input class="input3"  type="password" name="pwdrepeat" placeholder="Repeat Password..." style="margin-bottom:5px;">
             
