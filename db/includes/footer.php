@@ -9,7 +9,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-4GLZENNWMK');
-</script>
+</script> -->
 
 <script>
     window.addEventListener('load', function() {
@@ -21,5 +21,5 @@
             document.querySelector('.loader').style.display = 'none';
         })
     });
-</script> -->
+</script> 
 </html>

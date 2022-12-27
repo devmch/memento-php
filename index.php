@@ -1,48 +1,16 @@
 <?php
     include_once 'db/includes/header.php';
 ?>
+<title>home - memento</title>
+</head>
 
 <body> <!-- class="aalign"  ondragstart="return false;" ondrop="return false;"-->
 
 <div id="preloader" class="loader"></div>
 
-<header id="header">
-    <a class="h-logo" href="/home.html">
-        <img src="assets/head-logo-bw.svg" alt="memento logo" class="logo">
-    </a>
-
-    <nav>
-        <ul class="nav_links">
-            <li>
-                <div class="divclr">
-                    <a id="p1" class="diva" href="#">Projects</a>
-                    <a id="p2" class="divb bi bi-chevron-down"></a>
-                </div>
-            </li>
-            <li><a class="pro" href="/?about">Go Pro</a></li>
-            <!-- <li><i class="bi bi-gear-fill bri popup"></i></li> -->
-
-            <?php
-                if(isset($_SESSION["useruid"])){
-                    echo "<li><a href='profile.php'>Profile</a></li>";
-                    echo "<li><a href='db/includes/logout.inc.php'>Logout</a></li>";
-                }
-                else{
-                    echo "<li><a href='db/attributes/signup.php'>Sign Up</a></li>";
-                    echo "<li><a href='db/attributes/login.php'>Login</a></li>";
-                }
-            ?>
-        </ul>
-    </nav>
-
-
-    <!-- <a href="#" class="cta">
-        <div class="profilepicture">
-            <img src="https://res.cloudinary.com/coolors/image/upload/t_60x60/v1636729140/live/custom-avatars/fzhn1oqool8tpb2am7hx.jpg"></img>
-        </div>
-    </a> -->
-
-</header>
+<?php
+    include_once 'db/includes/nav.php';
+?>
 
 <main class="centerMain">
     <p style="margin-bottom: -10px;">welcome to..</p>

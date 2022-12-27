@@ -5,12 +5,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>home - memento</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pageload.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/dragging.css">
-    <link rel="stylesheet" href="css/home.css">    
+    <link rel="stylesheet" href="css/theme-popup.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/destroy.css">
+    <link rel="stylesheet" href="css/home.css">
     <script rel="preload" src="scripts/check.js"></script>
 
     <meta charset="UTF-8">
@@ -44,4 +47,3 @@
 	<meta property="og:type" content="website">
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon-g.svg">
-</head>
