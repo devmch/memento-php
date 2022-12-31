@@ -1,7 +1,7 @@
 <?php
     include_once 'db/includes/header.php';
 ?>
-<title>home - memento</title>
+<title>Home — memento</title>
 </head>
 
 <body> <!-- class="aalign"  ondragstart="return false;" ondrop="return false;"-->

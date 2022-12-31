@@ -1,7 +1,7 @@
 <?php
     include_once 'db/includes/header.php';
 ?>
-<title>sign up - memento</title>
+<title>Sign up — memento</title>
 </head>
 <body>
 

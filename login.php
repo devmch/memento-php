@@ -1,7 +1,7 @@
 <?php
     include_once 'db/includes/header.php';
 ?>
-<title>log in - memento</title>
+<title>Log in — memento</title>
 </head>
 <body>
 
