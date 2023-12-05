@@ -1,14 +1,14 @@
 /*  ROOT  */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Raleway:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Raleway:wght@300;400;500;600&display=swap&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap");
 
 :root {
   --fw: 300;
-  --lihover: #19191a; /* #101113 */
+  --lihover: #1d1d1d; /* #101113 */
   --lihover2:#0F0F10; 
   --focusclr: #FFFFFF08;
   --smallclr: #f5f5f555;
-  --borderclr: #ffffff0a;
+  --borderclr: #FFFFFF09;
   --hrc: #ffffff12;
   --loaderclr: #ffffff2c;
   --w: #cdcdcd;
@@ -19,9 +19,9 @@
   --buttonhover: #b785ab; /* #886194 */
   --hclr: #e1b1d6; /* #b392ac - #dba5cf */
 
-  --minclr: #101010; // #141618 // #d1b3c4 // #0B0B0D // #101113    &&    #2a2b2c
+  --minclr: #171717; // #141618 // #d1b3c4 // #0B0B0D // #101113    &&    #2a2b2c
   --bclr: #0000006f;
-  --b: #020202; /* #030304 / #020202 / #000 */ /* #010101 */ /* #060606 */
+  --b: #101010; /* #030304 / #020202 / #000 */ /* #010101 */ /* #060606 */
   --dim: #FFFFFF3C; // #00000041
 }
 
@@ -67,14 +67,14 @@ body.light-theme {
 .loader::after {
   content: "";
   display: block;
-  width: 85px;
-  height: 85px;
-  border: 4px solid var(--loaderclr);
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--loaderclr);
   border-top-color: var(--hclr);
   border-radius: 50%;
   /* background: #fff; */
   margin: 8px;
-  animation: loading 0.75s infinite linear;
+  animation: loading 0.55s infinite linear;
 }
 
 @keyframes loading {
@@ -165,8 +165,9 @@ h1 {
 h2,
 p {
   text-align: center;
+  font-family: "Raleway", "Inter", sans-serif;
   align-items: center;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 17px;
   color: var(--sekclr); // #0000006F
   transition: 0.2s;
@@ -245,7 +246,7 @@ header {
 }
 
 form {
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05); /* rgba(127, 127, 127, 0.075) */
+  /*box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05); /* rgba(127, 127, 127, 0.075) */
   margin: auto;
   width: 500px;
   max-width: 100%;
@@ -487,7 +488,7 @@ a button {
   font-size: 17px;
   border: none;
   border-radius: 10px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.45rem;
   background-color: var(--hclr);
   cursor: pointer;
   transition: 0.2s ease-in-out;

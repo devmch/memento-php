@@ -77,8 +77,8 @@ if(isset($_POST["addtodo"])) {
 
 <header style="text-align: center;">
     <h1>memento</h1>
-    <p style="margin-top: -35px;">by <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
-    <p>rapid todo list app on-the-go.<br> suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">tweet me.</a></p>
+    <p style="margin-top: -35px;">By <a href="https://magnushvidtfeldt.com" target="_blank">Magnus Hvidtfeldt</a>
+    <p>Quick to-do list notes on-the-go.<br> Suggestions? <a href="https://twitter.com/hvidtfldt" target="_blank">Tweet me.</a></p>
 
 </header>
 
@@ -92,7 +92,7 @@ if(isset($_POST["addtodo"])) {
                     <a class="list-title" style="cursor: default;" id="date">list name...</a>
                 </div>
             <div>
-                <a class="hovEl" id="clear1" onclick="confirmation()">clear</a>
+                <a class="hovEl" id="clear1" onclick="confirmation()">Clear</a>
             </div>
         </div>
     </div>
@@ -103,12 +103,12 @@ if(isset($_POST["addtodo"])) {
             name="todo"
             id="input" 
             class="input" 
-            placeholder="add a task..." 
+            placeholder="Add a task" 
             autocomplete="off"
             spellcheck="false"
         />
 
-        <button class="btn" id="btn" type="submit" name="addtodo">add</button>
+        <!-- <button class="btn" id="btn" type="submit" name="addtodo">add</button> -->
 
         <ul class="todos" id="todos">
             
@@ -119,7 +119,7 @@ if(isset($_POST["addtodo"])) {
     </form>
 
     <!-- NEW LIST 1 -->
-    <a id="newli" data-modal-target="#modal2" class="newli hovEl"><button>new list<br/></button></a>
+    <a id="newli" data-modal-target="#modal2" class="newli hovEl"><button>New list<br/></button></a>
 
     <!--    LIST 2     -->
     <div class="tomorrow" id="tmr">
@@ -130,8 +130,8 @@ if(isset($_POST["addtodo"])) {
                     <a class="list-title" id="nameoflist1" style="cursor: default;">list name...</a>
                 </div>
                 <div>
-                    <a class="hovEl" onclick="deletelist()" style="margin-right: 25px;">delete </a>
-                    <a class="hovEl" id="clear2" onclick="confirmit()">clear</a>
+                    <a class="hovEl" onclick="deletelist()" style="margin-right: 25px;">Delete </a>
+                    <a class="hovEl" id="clear2" onclick="confirmit()">Clear</a>
                 </div>
             </div> 
         </div>
@@ -143,7 +143,7 @@ if(isset($_POST["addtodo"])) {
             name="todo"
             id="input1" 
             class="input" 
-            placeholder="add a task..." 
+            placeholder="Add a task" 
             autocomplete="off"
             spellcheck="false"
         />
@@ -153,7 +153,7 @@ if(isset($_POST["addtodo"])) {
     </div>
 
     <!-- NEW LIST 2 id="newli2" -->
-    <a id="newli2" data-modal-target="#modal1" class="newli hovEl"><button>new list<br/></button></a>
+    <a id="newli2" data-modal-target="#modal1" class="newli hovEl"><button>New list<br/></button></a>
 
     <!--    LIST 3     -->
     <div class="tomorrow" id="tmr1">
@@ -164,8 +164,8 @@ if(isset($_POST["addtodo"])) {
                     <a class="list-title" id="nameoflist2" style="cursor: default;">list name...</a>
                 </div>
                 <div class="butActions list-container">
-                    <a class="hovEl" onclick="deletelist1()" style="margin-right: 25px;">delete </a>
-                    <a class="hovEl" id="clear3" onclick="confirmit2()">clear</a>
+                    <a class="hovEl" onclick="deletelist1()" style="margin-right: 25px;">Delete </a>
+                    <a class="hovEl" id="clear3" onclick="confirmit2()">Clear</a>
                 </div>
             </div> 
         </div>
@@ -177,7 +177,7 @@ if(isset($_POST["addtodo"])) {
             name="todo"
             id="input2" 
             class="input" 
-            placeholder="add a task..." 
+            placeholder="Add a task" 
             autocomplete="off"
             spellcheck="false"
         />
@@ -323,7 +323,7 @@ if(isset($_POST["addtodo"])) {
     window.addEventListener('load', function() {
         setTimeout(() => {
         document.querySelector('.loader').classList.add('loader--hidden');
-        }, 500)
+        }, 25)
 
         document.querySelector('.loader').addEventListener('transitionend', function() {
             document.querySelector('.loader').style.display = 'none';
